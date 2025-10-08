@@ -16,12 +16,12 @@ downloads,ratingAvg
   <div className="card-body space-y-3">
     <h2 className="card-title">{title}</h2>
    <div className='flex justify-between'>
-    <button className='flex h-5 w-5 gap-2'>
-        <img src={downloadsImg} alt="" />
+    <button className='flex h-10 w-20 btn btn-outline gap-2 border-gray-200 text-green-500 bg-base-300'>
+        <img className='h-5 w-5' src={downloadsImg} alt="" />
         <span>{downloads}</span>
     </button>
-    <button  className='flex h-5 w-5 gap-2'>
-        <img src={ratingImg}alt="" />
+    <button  className='flex h-10 w-20 btn btn-outline gap-2 border-gray-200 text-orange-500 bg-base-300'>
+        <img className='h-5 w-5' src={ratingImg}alt="" />
         <span>{ratingAvg}</span>
     </button>
    </div>
