@@ -1,0 +1,588 @@
+[
+  {
+    "image": "./demo-app (1).webp",
+    "title": "Cosmic Drift Racer",
+    "companyName": "Starbound Studios",
+    "id": 101,
+    "description": "An exhilarating space racing game with stunning graphics and challenging tracks across the galaxy.",
+    "size": 950,
+    "reviews": "12.5K",
+    "ratingAvg": 4.6,
+    "downloads": "550K",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 150
+      },
+      {
+        "name": "2 star",
+        "count": 200
+      },
+      {
+        "name": "3 star",
+        "count": 1000
+      },
+      {
+        "name": "4 star",
+        "count": 3150
+      },
+      {
+        "name": "5 star",
+        "count": 8000
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (2).webp",
+    "title": "Pro Productivity Suite",
+    "companyName": "Efficiency Labs",
+    "id": 102,
+    "description": "All-in-one tool for task management, note-taking, and calendar syncing. Boost your daily output!",
+    "size": 150,
+    "reviews": "8.9K",
+    "ratingAvg": 4.2,
+    "downloads": "1.2M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 300
+      },
+      {
+        "name": "2 star",
+        "count": 450
+      },
+      {
+        "name": "3 star",
+        "count": 1500
+      },
+      {
+        "name": "4 star",
+        "count": 3550
+      },
+      {
+        "name": "5 star",
+        "count": 3100
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (3).webp",
+    "title": "ConnectSphere",
+    "companyName": "Global Networks Inc.",
+    "id": 103,
+    "description": "A new social media platform focusing on authentic connections and shared interests. Join the conversation!",
+    "size": 300,
+    "reviews": "25K",
+    "ratingAvg": 3.9,
+    "downloads": "3.5M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 1200
+      },
+      {
+        "name": "2 star",
+        "count": 1800
+      },
+      {
+        "name": "3 star",
+        "count": 5500
+      },
+      {
+        "name": "4 star",
+        "count": 9000
+      },
+      {
+        "name": "5 star",
+        "count": 7500
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (4).webp",
+    "title": "Quantum Tutor",
+    "companyName": "Academic Ascent",
+    "id": 104,
+    "description": "Interactive learning app for advanced physics and mathematics. Features augmented reality lessons.",
+    "size": 780,
+    "reviews": "5.2K",
+    "ratingAvg": 4.8,
+    "downloads": "150K",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 50
+      },
+      {
+        "name": "2 star",
+        "count": 80
+      },
+      {
+        "name": "3 star",
+        "count": 270
+      },
+      {
+        "name": "4 star",
+        "count": 1300
+      },
+      {
+        "name": "5 star",
+        "count": 3500
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (5).webp",
+    "title": "Pocket Budgeter",
+    "companyName": "Fiscal Tech Solutions",
+    "id": 105,
+    "description": "Track your expenses, set budgets, and achieve financial goals with ease. Secure and intuitive.",
+    "size": 85,
+    "reviews": "15K",
+    "ratingAvg": 4.5,
+    "downloads": "2.1M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 400
+      },
+      {
+        "name": "2 star",
+        "count": 600
+      },
+      {
+        "name": "3 star",
+        "count": 1800
+      },
+      {
+        "name": "4 star",
+        "count": 4500
+      },
+      {
+        "name": "5 star",
+        "count": 7700
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (6).webp",
+    "title": "Zen Flow Meditation",
+    "companyName": "Mindful Creations",
+    "id": 106,
+    "description": "Guided meditations and sleep stories to reduce stress and improve mental well-being.",
+    "size": 450,
+    "reviews": "32K",
+    "ratingAvg": 4.7,
+    "downloads": "4.8M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 300
+      },
+      {
+        "name": "2 star",
+        "count": 500
+      },
+      {
+        "name": "3 star",
+        "count": 1200
+      },
+      {
+        "name": "4 star",
+        "count": 7000
+      },
+      {
+        "name": "5 star",
+        "count": 23000
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (1).webp",
+    "title": "Pixel Perfect Editor",
+    "companyName": "Artisan Apps",
+    "id": 107,
+    "description": "Professional photo editing with advanced filters, layers, and adjustment tools. Unleash your creativity.",
+    "size": 550,
+    "reviews": "18K",
+    "ratingAvg": 4.3,
+    "downloads": "950K",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 700
+      },
+      {
+        "name": "2 star",
+        "count": 900
+      },
+      {
+        "name": "3 star",
+        "count": 3000
+      },
+      {
+        "name": "4 star",
+        "count": 6000
+      },
+      {
+        "name": "5 star",
+        "count": 7400
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (2).webp",
+    "title": "Rhythm Reactor",
+    "companyName": "Sonic Games Inc.",
+    "id": 108,
+    "description": "A fast-paced rhythm game where you tap and slide to the beat. Featuring original electronic music.",
+    "size": 620,
+    "reviews": "9.8K",
+    "ratingAvg": 4.4,
+    "downloads": "700K",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 250
+      },
+      {
+        "name": "2 star",
+        "count": 400
+      },
+      {
+        "name": "3 star",
+        "count": 1250
+      },
+      {
+        "name": "4 star",
+        "count": 3800
+      },
+      {
+        "name": "5 star",
+        "count": 4100
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (3).webp",
+    "title": "Gourmet Finder",
+    "companyName": "Cuisine Connect",
+    "id": 109,
+    "description": "Discover hidden gem restaurants, view menus, and book reservations instantly.",
+    "size": 210,
+    "reviews": "11K",
+    "ratingAvg": 4.1,
+    "downloads": "1.8M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 500
+      },
+      {
+        "name": "2 star",
+        "count": 700
+      },
+      {
+        "name": "3 star",
+        "count": 2500
+      },
+      {
+        "name": "4 star",
+        "count": 4300
+      },
+      {
+        "name": "5 star",
+        "count": 3000
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (4).webp",
+    "title": "World Trekker Maps",
+    "companyName": "Explorer's Edge",
+    "id": 110,
+    "description": "Offline maps, customizable routes, and travel guides for globetrotters and adventurers.",
+    "size": 1200,
+    "reviews": "7.5K",
+    "ratingAvg": 4.6,
+    "downloads": "600K",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 100
+      },
+      {
+        "name": "2 star",
+        "count": 150
+      },
+      {
+        "name": "3 star",
+        "count": 850
+      },
+      {
+        "name": "4 star",
+        "count": 2400
+      },
+      {
+        "name": "5 star",
+        "count": 4000
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (5).webp",
+    "title": "Global Daily Brief",
+    "companyName": "Informed Media",
+    "id": 111,
+    "description": "Curated, unbiased news from around the world. Customizable topics and push notifications.",
+    "size": 90,
+    "reviews": "6.5K",
+    "ratingAvg": 4.0,
+    "downloads": "2.5M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 400
+      },
+      {
+        "name": "2 star",
+        "count": 600
+      },
+      {
+        "name": "3 star",
+        "count": 1700
+      },
+      {
+        "name": "4 star",
+        "count": 2100
+      },
+      {
+        "name": "5 star",
+        "count": 1700
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (6).webp",
+    "title": "Block Builder World",
+    "companyName": "Creative Sandbox Ltd.",
+    "id": 112,
+    "description": "A popular sandbox game where you can build anything you imagine with blocks. Multiplayer enabled.",
+    "size": 700,
+    "reviews": "55K",
+    "ratingAvg": 4.5,
+    "downloads": "10M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 2500
+      },
+      {
+        "name": "2 star",
+        "count": 3000
+      },
+      {
+        "name": "3 star",
+        "count": 7000
+      },
+      {
+        "name": "4 star",
+        "count": 15000
+      },
+      {
+        "name": "5 star",
+        "count": 27500
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (1).webp",
+    "title": "Language Explorer: Spanish",
+    "companyName": "Polyglot Solutions",
+    "id": 113,
+    "description": "Fun and engaging lessons to learn Spanish, from beginner to advanced conversational skills.",
+    "size": 380,
+    "reviews": "10.5K",
+    "ratingAvg": 4.7,
+    "downloads": "850K",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 100
+      },
+      {
+        "name": "2 star",
+        "count": 150
+      },
+      {
+        "name": "3 star",
+        "count": 650
+      },
+      {
+        "name": "4 star",
+        "count": 3500
+      },
+      {
+        "name": "5 star",
+        "count": 6100
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (2).webp",
+    "title": "FitTrack Pro",
+    "companyName": "Wellness Tech",
+    "id": 114,
+    "description": "Track your runs, cycling, and other workouts. Integrates with smart devices and offers personalized plans.",
+    "size": 180,
+    "reviews": "22K",
+    "ratingAvg": 4.3,
+    "downloads": "3M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 900
+      },
+      {
+        "name": "2 star",
+        "count": 1200
+      },
+      {
+        "name": "3 star",
+        "count": 3800
+      },
+      {
+        "name": "4 star",
+        "count": 7500
+      },
+      {
+        "name": "5 star",
+        "count": 8600
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (3).webp",
+    "title": "Cloud Vault Storage",
+    "companyName": "Secure Data Solutions",
+    "id": 115,
+    "description": "Encrypted cloud storage for all your files and photos. Automatic backup and easy sharing.",
+    "size": 55,
+    "reviews": "14K",
+    "ratingAvg": 4.8,
+    "downloads": "4M",
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 100
+      },
+      {
+        "name": "2 star",
+        "count": 200
+      },
+      {
+        "name": "3 star",
+        "count": 900
+      },
+      {
+        "name": "4 star",
+        "count": 4800
+      },
+      {
+        "name": "5 star",
+        "count": 8000
+      }
+    ]
+  },
+  {
+    "image": "./demo-app (1).webp",
+    "title": "Ancient Scrolls Adventure",
+    "companyName": "Mythic Games Co.",
+    "id": 116,
+    "description": "An open-world RPG set in a mystical land filled with quests, monsters, and hidden treasures.",
+    "size": 1500,
+    "reviews": 45000,
+    "ratingAvg": 4.7,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 25000 }
+    ]
+  },
+  {
+    "image": "./demo-app (2).webp",
+    "title": "Code Snippet Manager",
+    "companyName": "DevTools Inc.",
+    "id": 117,
+    "description": "Organize, save, and share your code snippets across different projects and languages easily.",
+    "size": 120,
+    "reviews": 9500,
+    "ratingAvg": 4.4,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "./demo-app (3).webp",
+    "title": "Digital Canvas Pro",
+    "companyName": "Creative Suite Ltd.",
+    "id": 118,
+    "description": "A powerful drawing and painting app featuring layers, custom brushes, and high-resolution export.",
+    "size": 890,
+    "reviews": 16000,
+    "ratingAvg": 4.6,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4400 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "image": "./demo-app (4).webp",
+    "title": "World History Timeline",
+    "companyName": "Epoch Learning",
+    "id": 119,
+    "description": "Interactive timeline app covering major historical events from ancient civilizations to the modern era.",
+    "size": 650,
+    "reviews": 4800,
+    "ratingAvg": 4.8,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "./demo-app (5).webp",
+    "title": "Local Transit Navigator",
+    "companyName": "City Movers Tech",
+    "id": 120,
+    "description": "Real-time public transport schedules, route planning, and delay alerts for major metropolitan areas.",
+    "size": 180,
+    "reviews": 28000,
+    "ratingAvg": 4.2,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4400 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 13000 }
+    ]
+  }
+
+]

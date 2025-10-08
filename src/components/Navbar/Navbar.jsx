@@ -3,9 +3,10 @@ import logoImg from '../../assets/logo.png'
 import { FaGithub } from "react-icons/fa";
 import { NavLink } from 'react-router';
 import { Link } from 'react-router';
+import { FaUser } from "react-icons/fa";
 const Navbar = () => {
     return (
-       <div className="navbar bg-base-100 shadow-sm">
+       <div className="navbar bg-base-100 shadow-sm pl-5 pr-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +32,12 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithub />Contribute</a>
+    <a 
+  href="https://github.com/fahmida-oni2" 
+  className="btn rounded-xl text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"
+>
+  <FaGithub />Contribute
+</a>
   </div>
 </div>
     );
