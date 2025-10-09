@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import useAppData from '../../Hooks/useAppData';
 import downloadImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
 import reviewImg from '../../assets/icon-review.png'
+import { ToastContainer, toast } from 'react-toastify';
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 const AppDetails = () => {
     const {id} = useParams()
     const {appData, loading, error} = useAppData()
@@ -14,12 +16,31 @@ const AppDetails = () => {
         return <p>Error loading app data.</p>
     }
     const data = appData.find (d => String(d.id) === id)
-    const {image,title,downloads,companyName,ratingAvg,reviews,size} = data 
+    const {image,title,downloads,companyName,ratingAvg,reviews,size, ratings} = data
+
+    const handleInstallButton = () => {
+        const existingApp =JSON.parse(localStorage.getItem('install'))
+        let updatedApp = []
+        if (existingApp){
+            const isDuplicate = existingApp.some(a => a.id === data.id)
+            if(isDuplicate){
+                 return toast('App is already installed')
+            } 
+            updatedApp = [...existingApp, data]
+        }
+        else{
+            updatedApp.push(data)
+        }
+        localStorage.setItem('install',JSON.stringify(updatedApp))
+    }
+
+ 
     return (
         <div className='flex flex-col min-h-screen bg-base-200'>
-            <div className='flex gap-5 m-10  items-center  '>
+            <section>
+                <div className='lg:flex grid grid-cols-1 gap-5 m-10  items-center  '>
                 <div className=' mr-10'>
-                    <img className='lg:w-full md:w-[200px] w-[250px] lg:object-cover shadow-xl  border-gray-500   ' src={image} alt="" />
+                    <img className='lg:w-full md:w-[200px] w-[250px] mx-auto lg:object-cover shadow-xl  border-gray-500   ' src={image} alt="" />
                 </div>
                 <div className='space-y-3 p-5'> 
                     <h1 className='font-extrabold text-3xl'>{title}</h1>
@@ -44,12 +65,19 @@ const AppDetails = () => {
                             <h1  className='font-extrabold text-2xl'>{reviews}</h1>
                         </div>
                     </div>
-                    <button className='btn bg-[#00D390] text-white'>Install Now ({size} MB) </button>
+                    <button  onClick={handleInstallButton}  className='btn bg-[#00D390] text-white'  > Install Now (${size} MB)</button>
                 </div>
             </div>
             <div className='border-b-2 border-solid border-b-gray-400 mb-5 ml-7 mr-7'>
 
             </div>
+            </section>
+
+            <section className='space-y-3 m-10'>
+                <h1 className='font-bold text-2xl'>Ratings</h1>
+                
+                
+            </section>
         </div>
     );
 };
