@@ -1,12 +1,11 @@
 import React from 'react';
 import downloadsImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
+import { Link } from 'react-router';
 const Card = ({data}) => {
-    const {image,title,
-downloads,ratingAvg
- } =data
+    const {image,title,downloads,ratingAvg,id} =data
     return (
-        <div className="card bg-base-100 border-gray-300 shadow-xl  hover:scale-105 transition ease-in-out m-5 p-5">
+        <Link to={`/app/${id}`} className="card bg-base-100 border-gray-300 shadow-xl  hover:scale-105 transition ease-in-out m-5 p-5">
   <figure className='h-48 overflow-hidden'>
     <img
       src={image}
@@ -26,7 +25,7 @@ downloads,ratingAvg
     </button>
    </div>
   </div>
-</div>
+</Link>
     );
 };
 
