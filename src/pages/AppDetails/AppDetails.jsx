@@ -1,14 +1,28 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import useAppData from '../../Hooks/useAppData';
 import downloadImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
 import reviewImg from '../../assets/icon-review.png'
 import { ToastContainer, toast } from 'react-toastify';
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import Chart from '../../components/Chart/Chart';
+import ErrorApp from '../../components/ErrorApp/ErrorApp';
 const AppDetails = () => {
     const {id} = useParams()
     const {appData, loading, error} = useAppData()
+    const [isInstalled, setIsInstalled] = useState(false);
+  useEffect(() => {
+        const checkInstallationStatus = () => {
+            if (!id || !appData) return;
+            const currentData = appData.find(d => String(d.id) === id);
+            if (!currentData) return;
+            const installedApps = JSON.parse(localStorage.getItem('install') || '[]');
+            const appFound = installedApps.some(app => String(app.id) === String(currentData.id));
+            setIsInstalled(appFound);
+        };
+        checkInstallationStatus();
+    }, [id, appData]);
+
     if (loading) {
         return <p>Loading......</p>
     }
@@ -16,22 +30,27 @@ const AppDetails = () => {
         return <p>Error loading app data.</p>
     }
     const data = appData.find (d => String(d.id) === id)
-    const {image,title,downloads,companyName,ratingAvg,reviews,size, ratings} = data
+    if (!data) {
+        return <ErrorApp></ErrorApp>;
+    }
+    const {image,title,downloads,companyName,ratingAvg,reviews,size,description} = data;
 
-    const handleInstallButton = () => {
+  
+
+ const handleInstallButton = () => {
         const existingApp =JSON.parse(localStorage.getItem('install'))
         let updatedApp = []
         if (existingApp){
-            const isDuplicate = existingApp.some(a => a.id === data.id)
-            if(isDuplicate){
-                 return toast('App is already installed')
-            } 
             updatedApp = [...existingApp, data]
         }
         else{
             updatedApp.push(data)
+           
         }
         localStorage.setItem('install',JSON.stringify(updatedApp))
+        setIsInstalled(true);
+          toast.success('App is installed')
+           
     }
 
  
@@ -65,7 +84,7 @@ const AppDetails = () => {
                             <h1  className='font-extrabold text-2xl'>{reviews}</h1>
                         </div>
                     </div>
-                    <button  onClick={handleInstallButton}  className='btn bg-[#00D390] text-white'  > Install Now (${size} MB)</button>
+                    <button  onClick={handleInstallButton} style={{backgroundColor: isInstalled ? 'gray' : '#28a745'}} className='btn bg-[#00D390] text-white'  disabled={isInstalled} > {isInstalled ? 'Installed' : `Install Now (${size} MB)`}</button>
                 </div>
             </div>
             <div className='border-b-2 border-solid border-b-gray-400 mb-5 ml-7 mr-7'>
@@ -75,9 +94,19 @@ const AppDetails = () => {
 
             <section className='space-y-3 m-10'>
                 <h1 className='font-bold text-2xl'>Ratings</h1>
-                
-                
+                <Chart></Chart>  
             </section>
+
+                 <div className='border-b-2 border-solid border-b-gray-400 mb-5 ml-7 mr-7'>
+
+            </div>
+
+            <section className='space-y-3 m-10'>
+                <h1 className='font-bold text-2xl'>Description</h1>
+                <p>{description}</p>
+            </section>
+
+               <ToastContainer />
         </div>
     );
 };
