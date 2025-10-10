@@ -3,6 +3,7 @@ import useAppData from '../../Hooks/useAppData';
 import Card from '../../components/Card/Card';
 import { Link } from 'react-router';
 import { CiSearch } from "react-icons/ci";
+import ErrorApp from '../../components/ErrorApp/ErrorApp';
 
 const Apps = () => {
     const {appData} = useAppData()
@@ -13,7 +14,9 @@ const Apps = () => {
         appData.title.toLocaleLowerCase().includes(term)
     )
     : appData
-    console.log(searchedApps)
+
+const showNoResult = searchedApps.length === 0 && term.length > 0;
+
     return (
         <div className='flex flex-col min-h-screen'>
             <div className='pt-10'>
@@ -29,6 +32,12 @@ const Apps = () => {
   <input value={search} onChange={e=> setSearch(e.target.value)} type="search" placeholder="Search Apps" />
 </label>
            </div>
+
+ {showNoResult ? (
+                <div className='flex items-center justify-center p-20'>
+                    <ErrorApp searchTerm={search}></ErrorApp>
+                </div>
+            ) :(
            <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {
                     searchedApps.map(data => (
@@ -36,6 +45,7 @@ const Apps = () => {
                     ))
                 }
                 </div>
+            )}
         </div>
     );
 };
