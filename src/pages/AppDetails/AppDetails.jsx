@@ -45,11 +45,10 @@ const AppDetails = () => {
         }
         else{
             updatedApp.push(data)
-           
         }
         localStorage.setItem('install',JSON.stringify(updatedApp))
         setIsInstalled(true);
-          toast.success('App is installed')
+          toast.success('App is installing')
            
     }
 

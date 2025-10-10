@@ -3,7 +3,9 @@ import logoImg from '../../assets/logo.png'
 import { FaGithub } from "react-icons/fa";
 import { NavLink } from 'react-router';
 import { Link } from 'react-router';
-import { FaUser } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FaAppStore } from "react-icons/fa";
+import { MdInstallDesktop } from "react-icons/md";
 const Navbar = () => {
     return (
        <div className="navbar bg-base-100 shadow-sm pl-5 pr-5">
@@ -26,9 +28,9 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 ">
-      <NavLink to='/' className='m-2 hover:text-[#632EE3]'>Home</NavLink>
-   <NavLink to='/apps' className='m-2 hover:text-[#632EE3]'>Apps</NavLink>
-   <NavLink to='/installation' className='m-2 hover:text-[#632EE3]'>Installation</NavLink>
+      <NavLink to='/' className='m-2 hover:text-[#632EE3] flex justify-center items-center gap-1'><FaHome />Home</NavLink>
+   <NavLink to='/apps' className='m-2 hover:text-[#632EE3] flex justify-center items-center gap-1'><FaAppStore />Apps</NavLink>
+   <NavLink to='/installation' className='m-2 hover:text-[#632EE3] flex justify-center items-center gap-1'><MdInstallDesktop />Installation</NavLink>
     </ul>
   </div>
   <div className="navbar-end">

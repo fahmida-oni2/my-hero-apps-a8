@@ -9,11 +9,11 @@ const Banner = () => {
     <div>
       <h1 className="text-5xl font-bold text-center">We Build <br /> <span className='text-[#632EE3]'>Productive</span> Apps</h1>
       <p className="py-6 text-[#627382] text-center">
-       At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.
+       At <span className='text-black font-bold italic'>HERO.IO</span>, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.
       </p>
       <div className='flex justify-center items-center'>
-      <button className="btn m-2 shadow "><a className='flex justify-center items-center gap-2' href="https://play.google.com/store/games?hl=en"><FaGooglePlay />Google Play </a></button>
-      <button className="btn m-2 shadow"><a className='flex justify-center items-center gap-2' href="https://www.apple.com/app-store/"><FaAppStoreIos />App Store </a></button>
+      <button className="btn m-2 shadow "><a className='flex justify-center items-center gap-2 font-extrabold' href="https://play.google.com/store/games?hl=en"><FaGooglePlay />Google Play </a></button>
+      <button className="btn m-2 shadow"><a className='flex justify-center items-center gap-2 font-extrabold' href="https://www.apple.com/app-store/"><FaAppStoreIos />App Store </a></button>
       </div>
       
     </div>
