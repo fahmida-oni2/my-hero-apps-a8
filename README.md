@@ -2,7 +2,7 @@
 Making life easier and more exciting is what we do best at HERO.IO. We craft intuitive, innovative apps that solve real-world problems. Got a great idea? We'll be your digital partner, turning that concept into an impactful, delightful experience.
 
 ## Technologies Used
-- **React.js**: v17.0.2
+- **React.js**
 
 ## Features
 
