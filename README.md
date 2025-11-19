@@ -56,4 +56,4 @@ Install my-project with npm
 
 
 ## Live Link
-My client website is:[Hero.IO]([https://homenest-real-estate.netlify.app/](https://hero-app-08a.netlify.app/) 
+My client website is:[Hero.IO](https://hero-app-08a.netlify.app/) 
