@@ -3,6 +3,9 @@ Making life easier and more exciting is what we do best at HERO.IO. We craft int
 
 ## Technologies Used
 - **React.js**
+- **HTML**
+- **Tailwind CSS**
+- **Daisy UI**
 
 ## Features
 
