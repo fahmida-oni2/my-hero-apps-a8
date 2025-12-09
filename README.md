@@ -59,4 +59,4 @@ Install my-project with npm
 
 
 ## Live Link
-My client website is:[Hero.IO](https://hero-app-08a.netlify.app/) 
+My client website is:https://my-hero-apps-a8.vercel.app/
